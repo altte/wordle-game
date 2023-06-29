@@ -6,3 +6,7 @@ body {
   background-color: black;
   font-family: "Rubik", sans-serif;
 }
+
+.timer {
+  margin-left: 15px;
+}
