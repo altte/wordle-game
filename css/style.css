@@ -1,0 +1,8 @@
+@import "main.css";
+@import "header.css";
+@import "footer.css";
+
+body {
+  background-color: black;
+  font-family: "Rubik", sans-serif;
+}

@@ -1,17 +1,20 @@
 header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   font-size: 30px;
   font-weight: bolder;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding: 10px 20px;
+  color: white;
 }
 
 header img {
   width: 30px;
   height: 30px;
+  filter: invert(100%) sepia(1%) saturate(7474%) hue-rotate(48deg)
+    brightness(108%) contrast(114%);
 }
 
 .header-title {
