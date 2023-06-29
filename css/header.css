@@ -1,0 +1,28 @@
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bolder;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+}
+
+header img {
+  width: 30px;
+  height: 30px;
+}
+
+.header-title {
+  cursor: pointer;
+  padding-left: 90px;
+}
+
+.header-bar {
+  cursor: pointer;
+}
+
+.header-icons {
+  cursor: pointer;
+}
