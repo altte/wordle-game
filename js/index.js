@@ -17,9 +17,16 @@ function appStart() {
 
   const displayGameover = () => {
     const div = document.createElement("div");
-    div.innerText = "게임이 종료되었습니다.";
-    div.style =
-      "display: flex; justify-content: center; align-items: center; color: black; position: absolute; top: 40vh; left: 34vw; background-color: white; width: 250px; height:100px; border-radius: 20px;";
+
+    if (attempts === 5) {
+      div.innerHTML =
+        "<p>기회를 모두 사용하여" + "<br>" + "게임이 종료되었습니다.<p>";
+      div.classList.add("msg-fail");
+    } else {
+      div.innerHTML = "<p>정답입니다!!!!!!!!!!!<p>";
+      div.classList.add("msg-success");
+    }
+
     document.body.appendChild(div);
   };
 
