@@ -1,5 +1,3 @@
-const answer = "SHORT";
-
 let index = 0;
 let attempts = 0;
 let timerId;
@@ -43,8 +41,11 @@ function appStart() {
   };
 
   // 정답 확인
-  const handleEnterkey = () => {
+  const handleEnterkey = async () => {
     let answerNumber = 0;
+    const response = await fetch("/answer");
+    const answer = await response.json();
+
     for (let i = 0; i < 5; i++) {
       const block = document.querySelector(
         `.board-block[data-index='${attempts}${i}']`

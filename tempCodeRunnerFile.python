@@ -1,0 +1,12 @@
+
+class Me:
+    def __init__(self, name, location, hobby):
+        self.name = name
+        self.location = location
+        self.hobby = hobby
+
+    def introduce(self):
+        print(f"안녕하세요, 저는 {self.name}입니다. 저는 {self.location}에서 살고 있고, 취미는 {self.hobby}입니다.")
+
+me = Me("김예지", "서울", "피아노, 게임")
+me.introduce()
